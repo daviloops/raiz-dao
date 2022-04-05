@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+You can either open on Gitpod right away:
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/daviloops/raiz-dao)
+
+or follow these instructions to start on your local:
+
 First, run the development server:
 
 ```bash
