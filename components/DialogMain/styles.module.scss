@@ -1,0 +1,19 @@
+.dialog {
+  padding: 12px 22px; 
+  border-radius: 15px !important;
+  box-shadow: 0 0 9px rgb(0 0 0 / 11%) !important;
+}
+
+.closeIcon {
+  & path {
+    fill: #555694;
+  }
+}
+
+.closeButtonContainer {
+  text-align: right;
+}
+
+.content {
+  padding: 0 16px 16px;
+}

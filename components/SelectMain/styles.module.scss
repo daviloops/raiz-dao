@@ -1,0 +1,13 @@
+.error {
+  border: 1px solid #EA5433;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.completeBorder {
+  & legend {
+    width: 0 !important;
+  }
+}

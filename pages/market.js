@@ -1,9 +1,9 @@
 import Box from '@mui/material/Box';
 
 import withLayout from '../hoc/withLayout';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/Market.module.scss';
 
-function Home() {
+function Market() {
   return (
     <Box>
       home
@@ -11,4 +11,4 @@ function Home() {
   );
 }
 
-export default withLayout(Home);
+export default withLayout(Market);

@@ -3,20 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "yarn build:contract && yarn build:web",
+    "build:contract": "asb",
+    "build:contract:debug": "asb --target debug",
+    "build:web": "next build",
+    "deploy": "yarn build && near deploy",
+    "dev": "yarn build:contract:debug && near dev-deploy && nodemon --watch assembly -e ts --exec yarn dev:start",
+    "lint": "eslint \"./**/*.js\" \"./**/*.jsx\"",
+    "start": "yarn deploy && next start",
+    "dev:start": "env-cmd -f ./neardev/dev-account.env next dev",
+    "test": "yarn build:contract:debug && asp && jest"
   },
   "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "^5.5.3",
     "big.js": "^6.1.1",
+    "clsx": "^1.1.1",
     "env-cmd": "^10.1.0",
+    "lodash": "^4.17.21",
     "near-api-js": "^0.44.2",
     "next": "12.1.4",
     "nodemon": "^2.0.15",
     "prop-types": "^15.8.1",
-    "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-hook-form": "^7.29.0"
   },
   "devDependencies": {
     "eslint": "8.12.0",

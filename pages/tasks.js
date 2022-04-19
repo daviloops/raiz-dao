@@ -1,14 +1,14 @@
 import Box from '@mui/material/Box';
 
 import withLayout from '../hoc/withLayout';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/Tasks.module.scss';
 
-function Home() {
+function Tasks() {
   return (
     <Box>
-      home
+      Tasks
     </Box>
   );
 }
 
-export default withLayout(Home);
+export default withLayout(Tasks);

@@ -1,14 +1,14 @@
 import Box from '@mui/material/Box';
 
 import withLayout from '../hoc/withLayout';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/Groups.module.scss';
 
-function Home() {
+function Groups() {
   return (
     <Box>
-      home
+      Groups
     </Box>
   );
 }
 
-export default withLayout(Home);
+export default withLayout(Groups);
